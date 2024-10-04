@@ -6,7 +6,6 @@ const sequelize = new Sequelize(process.env.DATABASE, process.env.USER_NAME, pro
     port: process.env.DB_PORT,
     dialect: 'postgres',
     logging: false,
-    sync: { alter: true },
     define: {
         underscored: true,
         freezeTableName: false,

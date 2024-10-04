@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --env-file=.env src/index.js",
     "sequelize":"npx sequelize-cli db:migrate",
+    "start": "nodemon --env-file=.env src/index.js",
     "serve": "nodemon --env-file=.env src/index.js"
   },
   "keywords": [],

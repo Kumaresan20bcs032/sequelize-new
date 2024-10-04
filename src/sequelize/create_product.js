@@ -12,9 +12,7 @@ const { sendSuccessResponse, sendErrorResponse } = require("../utils/response_ha
 const createProduct = async (req, res) => {
     try {
 
-        const product = await Product.create({
-            product_name: "shirt"
-        });
+        const product = await Product.create(req.body);
 
         //use toJSON() to remove sequelize clutter
         console.log(product.toJSON());

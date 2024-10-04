@@ -1,6 +1,6 @@
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("../db-config/postgres_connection");
-
+// const Product = require("./product");
 /**
  * @description It creates a schema for category
  */
@@ -24,6 +24,7 @@ const Category = sequelize.define(
     updatedAt: "updated_at"
 }
 );
+
 
 // If table does not exists then create and insert data. 
 (async () => {

@@ -10,11 +10,7 @@ const { sendSuccessResponse, sendErrorResponse } = require("../utils/response_ha
 const createCategory = async (req, res) => {
     try {
 
-        const category = await Category.create({
-            product_id: 1,
-            category_name: "oxford",
-            sku_code: "PRD0001"
-        })
+        const category = await Category.create(req.body);
 
 
         //use toJSON() to remove sequelize clutter
