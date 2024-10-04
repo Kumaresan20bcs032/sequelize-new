@@ -12,7 +12,6 @@ const createCategory = async (req, res) => {
 
         const category = await Category.create(req.body);
 
-
         //use toJSON() to remove sequelize clutter
         console.log(category.toJSON());
         return sendSuccessResponse(res, 200, "Category successfully created", category.toJSON());

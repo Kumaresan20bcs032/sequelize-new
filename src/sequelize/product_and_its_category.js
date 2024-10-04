@@ -4,7 +4,7 @@ const { sendSuccessResponse, sendErrorResponse } = require("../utils/response_ha
 
 /**
  * @description     Listing all products and its related category
- * @param {*} req  GET /api/product/list
+ * @param {*} req   GET /api/product/list
  * @param {*} res 
  */
 const listProductAndItsCategory = async (req, res) => {

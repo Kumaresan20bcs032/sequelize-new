@@ -1,6 +1,7 @@
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("../db-config/postgres_connection");
 const Category = require("./category");
+
 /**
  * @description It creates a schema for product
  */

@@ -1,7 +1,11 @@
 const { sequelize } = require("../db-config/postgres_connection");
 const { sendSuccessResponse, sendErrorResponse } = require("../utils/response_handler");
 
-
+/**
+ * @description     Listing all products and its related category
+ * @param {*} req   GET /api/product/raw-query/list
+ * @param {*} res 
+ */
 const listProductByCategoryUsingRawQuery = async (req, res) => {
     try {
         const [products, metadata] = await sequelize.query(
