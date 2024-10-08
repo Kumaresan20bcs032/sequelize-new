@@ -12,7 +12,8 @@ const listProductAndItsCategory = async (req, res) => {
         const products = await Product.findAll(
             {
                 include: [{
-                    association: 'categories'
+                    association: 'categories',
+                    separate: true
                 }],
             }
         );
